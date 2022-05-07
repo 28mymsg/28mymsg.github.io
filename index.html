@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income</title>
+    <style type="text/css">
+        body {
+          background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="" id="students" placeholder="學生人數">學生人數<br>
+    <input type="text" value="" id="tuition" placeholder="學費">學費<br>
+    <input type="text" value="" id="courts" placeholder="場地數量">場地數量<br>
+    <input type="text" value="" id="courtsCost" placeholder="場地費">場地費<br>
+    <input type="text" value="" id="coachs" placeholder="教練人數">教練人數<br>
+    <input type="text" value="" id="coachsPrice" placeholder="教練費">教練費<br>
+    <input type="text" value="" id="coachs2" placeholder="教練數2">教練數2<br>
+    <input type="text" value="" id="coachsPrice2" placeholder="教練費2">教練費2<br>
+
+    <br>
+    <button onclick="setValues()">設定值</button>
+    <br><br>
+    <button onclick="caculation()">計算</button>
+
+    <script>
+        function setValues(){
+            var students = document.getElementById("students");
+            students.value = "10";
+            var tuition = document.getElementById("tuition");
+            tuition.value = "100";
+            var courts = document.getElementById("courts");
+            courts.value = "3";
+            var courtsCost = document.getElementById("courtsCost");
+            courtsCost.value = "300";
+            var coachs = document.getElementById("coachs");
+            coachs.value = "2";
+            var coachsPrice = document.getElementById("coachsPrice");
+            coachsPrice.value = "250";
+            var coachs2 = document.getElementById("coachs2");
+            coachs2.value = "1";
+            var coachsPrice2 = document.getElementById("coachsPrice2");
+            coachsPrice2.value = "200";
+        }
+
+        function caculation(){
+            var studentsObj = document.getElementById("students");
+            var tuitionObj = document.getElementById("tuition");
+            var courtsObj = document.getElementById("courts");
+            var courtsCostObj = document.getElementById("courtsCost");
+            var coachsObj = document.getElementById("coachs");
+            var coachsPriceObj = document.getElementById("coachsPrice");
+            var coachs2Obj = document.getElementById("coachs2");
+            var coachsPrice2Obj = document.getElementById("coachsPrice2");
+
+            var students = parseInt(studentsObj.value);
+            var tuition = parseInt(tuitionObj.value);
+            var courts = parseInt(courtsObj.value);
+            var courtsCost = parseInt(courtsCostObj.value);
+            var coachs = parseInt(coachsObj.value);
+            var coachsPrice = parseInt(coachsPriceObj.value);
+            var coachs2 = parseInt(coachs2Obj.value);
+            var coachsPrice2 = parseInt(coachsPrice2Obj.value);
+
+            var totalTuition = students * tuition;
+            var totalCourtsPrice = courtPrice * courtCounts;
+            var 
+        }
+    </script>
+</body>
+</html>
